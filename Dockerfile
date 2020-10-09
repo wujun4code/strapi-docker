@@ -4,8 +4,8 @@ WORKDIR /srv/app
 
 VOLUME /srv/app
 
-RUN npm config set registry https://registry.npm.taobao.org
-RUN yarn config set registry https://registry.npm.taobao.org
+RUN npm config set registry http://mirrors.tencentyun.com/npm
+RUN yarn config set registry http://mirrors.tencentyun.com/npm
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
